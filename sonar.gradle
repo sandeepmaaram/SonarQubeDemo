@@ -1,4 +1,10 @@
 buildscript {
+
+    repositories {
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
+    }
     dependencies {
         classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3")
     }
@@ -16,10 +22,11 @@ sonarqube {
         property "sonar.host.url", "https://sonarcloud.io"
     }
 }
+apply plugin: 'org.sonarqube'
+
 
 subprojects {
     afterEvaluate { project ->
-        //project.apply from: '../jacoco.gradle'
         project.apply from: '../sonar.gradle'
     }
     sonarqube {
