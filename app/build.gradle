@@ -30,11 +30,11 @@ android {
 
     productFlavors {
         prod {
-            applicationId "com.msr.composedemo"
+            applicationId "com.msr.sonarqubedemo"
         }
 
         stage {
-            applicationId "com.msr.composedemo.stage"
+            applicationId "com.msr.sonarqubedemo.stage"
         }
     }
     compileOptions {
