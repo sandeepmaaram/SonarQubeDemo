@@ -6,5 +6,6 @@ sonarqube {
         property "sonar.sources", "./src/main"
         property "sonar.tests", "./src/test"
         property "sonar.exclusions", "*/.c, */*Test/*, *.json, */.gradle/*, */R.class, */R.java, */ui/*"
+        property "sonar.java.binaries","**/*.java"
     }
 }
