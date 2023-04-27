@@ -17,4 +17,7 @@ subprojects {
     afterEvaluate { project ->
         project.apply from: '../sonar.gradle'
     }
+    sonarqube {
+        androidVariant "prodDebug"
+    }
 }
