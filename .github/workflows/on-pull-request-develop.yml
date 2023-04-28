@@ -1,4 +1,3 @@
-name: on-pull-request-develop
 on:
   push:
     branches:
