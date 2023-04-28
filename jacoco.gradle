@@ -94,7 +94,7 @@ def createVariantCoverage(variant) {
     }
 
     // Add unit test coverage verification tasks
-    /*tasks.create(name: "${testTaskName}CoverageVerification", type: JacocoCoverageVerification, dependsOn: "${testTaskName}Coverage") {
+    tasks.create(name: "${testTaskName}CoverageVerification", type: JacocoCoverageVerification, dependsOn: "${testTaskName}Coverage") {
         group = "Reporting"
         description = "Verifies Jacoco coverage for the ${variantName.capitalize()} build."
         violationRules {
@@ -117,5 +117,5 @@ def createVariantCoverage(variant) {
                 "$project.projectDir/src/${variantName}/kotlin"
         ]))
         getExecutionData().setFrom(files("${project.buildDir}/outputs/unit_test_code_coverage/${variantName}UnitTest/${testTaskName}.exec"))
-    }*/
+    }
 }
