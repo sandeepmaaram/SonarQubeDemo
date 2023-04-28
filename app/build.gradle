@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id "org.sonarqube" version "3.5.0.2730"
 }
 sonarqube {
     properties {
@@ -83,4 +82,4 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 }
-apply from: '../sonar.gradle'
+//apply from: '../sonar.gradle'
